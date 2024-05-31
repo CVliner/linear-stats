@@ -1,10 +1,10 @@
-linear-stats
+### Linear statistic
 
 Program that prints various statistical calculations (Linear Regression Line and the Pearson Correlation Coefficient)
 
 This time, like in the first exercise, you will have to build a program that prints various statistical calculations. Now, you will focus on the Linear Regression Line and the Pearson Correlation Coefficent.
 
-Instructions
+### Instructions
 
 Your program must be able to read from a file and print the result of each statistic mentioned above. In other words, your program must be able to read the data present in the path passed as argument. The data in the file will be presented as below:
 
