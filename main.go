@@ -55,7 +55,7 @@ func ReadFile(path string) ([]float64, error) {
 }
 
 func Linear_Regression(data []float64) (float64, float64) {
-	length := float64(len(data))
+	l:= float64(len(data))
 
 	var X float64
 	var Y float64
@@ -70,14 +70,14 @@ func Linear_Regression(data []float64) (float64, float64) {
 		XX += x * x
 	}
 
-	a := (length*XY - X*Y) / (length*XX - X*X)
-	b := (Y - a*X) / length
+	a := (l*XY - X*Y) / (l*XX - X*X)
+	b := (Y - a*X) / l
 
 	return a, b
 }
 
 func Pearson(data []float64) float64 {
-	length := float64(len(data))
+	l := float64(len(data))
 
 	var X float64
 	var Y float64
@@ -94,8 +94,8 @@ func Pearson(data []float64) float64 {
 		YY += y * y
 	}
 
-	num := length*XY - X*Y
-	den := (length*XX - X*X) * (length*YY - Y*Y)
+	num := l*XY - X*Y
+	den := (l*XX - X*X) * (l*YY - Y*Y)
 
 	if den == 0 {
 		return 0
